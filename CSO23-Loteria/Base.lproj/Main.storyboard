@@ -60,8 +60,8 @@
                                     <action selector="generateGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhj-NV-7rj"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bMF-M8-sEJ">
-                                <rect key="frame" x="44" y="239" width="286" height="188"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bMF-M8-sEJ">
+                                <rect key="frame" x="44.5" y="239.5" width="286" height="188"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8kT-zY-xE2">
                                         <rect key="frame" x="0.0" y="0.0" width="286" height="90"/>
@@ -248,6 +248,10 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="286" id="ozN-5I-vRT"/>
+                                    <constraint firstAttribute="height" constant="188" id="zrC-17-AiG"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -255,6 +259,7 @@
                         <constraints>
                             <constraint firstItem="xOK-jC-ABc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="8Pz-Ln-Wgr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c0v-Kq-Nlc" secondAttribute="trailing" constant="16" id="9Vr-Rg-fpy"/>
+                            <constraint firstItem="bMF-M8-sEJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9fz-hl-cot"/>
                             <constraint firstItem="c0v-Kq-Nlc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FCo-QV-BNb"/>
                             <constraint firstItem="UOp-zN-gCO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Q4e-Ck-bxW"/>
                             <constraint firstItem="UOp-zN-gCO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QVD-In-vDB"/>
@@ -263,19 +268,26 @@
                             <constraint firstItem="c0v-Kq-Nlc" firstAttribute="top" secondItem="UOp-zN-gCO" secondAttribute="bottom" constant="16" id="d2B-iY-orJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xOK-jC-ABc" secondAttribute="trailing" constant="32" id="e8U-Ep-poo"/>
                             <constraint firstItem="UOp-zN-gCO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fnf-Rf-NH4"/>
+                            <constraint firstItem="bMF-M8-sEJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kCa-ZL-L3L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jk7-dY-oc2" secondAttribute="bottom" constant="30" id="nUJ-7Z-hLw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jk7-dY-oc2" secondAttribute="trailing" constant="16" id="x11-0u-2AV"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bt1bt" destination="tya-G3-UDb" id="wIG-Q8-vJv"/>
+                        <outlet property="bt1lb" destination="yfL-yr-bRZ" id="6Xj-D0-9tK"/>
+                        <outlet property="bt2bt" destination="NVm-0a-Owm" id="OkD-7t-lEh"/>
+                        <outlet property="bt2lb" destination="H81-eR-oms" id="PCM-ba-ECt"/>
+                        <outlet property="bt3bt" destination="xiS-Yy-Etu" id="hC8-Rk-Teq"/>
+                        <outlet property="bt3lb" destination="pGu-7d-QbR" id="33p-Kk-nya"/>
+                        <outlet property="bt4bt" destination="aB9-jO-cEI" id="YcM-Mc-rUd"/>
+                        <outlet property="bt4lb" destination="yQl-ok-0GM" id="vSz-U3-zbg"/>
+                        <outlet property="bt5bt" destination="OEH-zU-x0A" id="fp6-p0-NlG"/>
+                        <outlet property="bt5lb" destination="CcV-et-5Zv" id="w6L-57-QIr"/>
+                        <outlet property="bt6bt" destination="GeL-zF-uVN" id="Lsm-1X-0Go"/>
+                        <outlet property="bt6lb" destination="8Sj-Kn-ITQ" id="m4K-2Z-PS8"/>
                         <outlet property="lbGameType" destination="xOK-jC-ABc" id="q2m-mQ-jkh"/>
                         <outlet property="scGameType" destination="c0v-Kq-Nlc" id="bUM-kv-x0C"/>
-                        <outletCollection property="balls" destination="8dP-sW-nAU" collectionClass="NSMutableArray" id="bC6-Kl-WHp"/>
-                        <outletCollection property="balls" destination="H81-eR-oms" collectionClass="NSMutableArray" id="6z1-iB-RJG"/>
-                        <outletCollection property="balls" destination="pGu-7d-QbR" collectionClass="NSMutableArray" id="Exb-2O-7Ao"/>
-                        <outletCollection property="balls" destination="yQl-ok-0GM" collectionClass="NSMutableArray" id="OVn-cm-kTA"/>
-                        <outletCollection property="balls" destination="CcV-et-5Zv" collectionClass="NSMutableArray" id="zp7-S3-vQ3"/>
-                        <outletCollection property="balls" destination="8Sj-Kn-ITQ" collectionClass="NSMutableArray" id="wli-aM-2Si"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
